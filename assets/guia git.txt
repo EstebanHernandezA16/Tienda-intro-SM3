@@ -6,6 +6,11 @@ de ahi ir a git y crear el repositorio y copiar push, pegar sin control v
 y buscar el token, autenticarse y listo
 
 
+
+git commit -m mensaje
+git push
+
+
 git remote add origin https://github.com/EstebanHernandezA16/Tienda-intro-SM3.git
 git branch -M main
 git push -u origin main
