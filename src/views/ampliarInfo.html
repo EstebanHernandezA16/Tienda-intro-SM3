@@ -4,14 +4,15 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/estiloshome.css">
+    <link rel="stylesheet" href="../../assets/styles/estiloshome.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg menu navbar-dark animate__animated animate__backInRight fixed-top">
+        <nav class="navbar navbar-expand-lg menu navbar-dark animate__animated animate__backInRight ">
             <div class="container-fluid">
               <a class="navbar-brand" href="#">Navbar</a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -48,52 +49,48 @@
             </div>
           </nav>
     </header>
-    
-    <main>          
-        <div id="carouselExampleRide" class="carousel slide  banner" data-bs-ride="true">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="./assets/img/banner2.jpg" class="d-block w-100" alt="...">
-                
-              </div>
-              <div class="carousel-item">
-                <!--<img src="./assets/img/banner1.jpg" class="d-block w-100" alt="...">-->
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleRide" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-        <section>
-            <div class="container my-2"></div>
-            <div class="row justify-content-center">
-                <div class="col-6 align-self-center">
-                    <img src="./assets/img/imagen_banner1.jpg" alt="foto 1" class="img-fluid w-100">
+
+    <main>
+
+        <div class="container-fluid my-5">
+            <div class="row">
+                <div class="col-8">
+                    <img src="https://firebasestorage.googleapis.com/v0/b/eha-tienda.appspot.com/o/consola1SE.jpg?alt=media&token=feff711e-7293-43a5-8ae7-b7de3a0bc578" alt="foto" class="img-fluid w-100">
                 </div>
-                <div class="col-4 align-self-center">
-                    <h4>Bienvenido</h4>
-                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Debitis, quasi. Minima error, quo fugit itaque eveniet, distinctio voluptatibus aperiam eos, ut magni ullam sequi tempora reiciendis soluta nemo. Pariatur adipisci maxime corrupti magnam delectus voluptatibus, aspernatur.
-                    </p>
+                <div class="col-4 border border-start">
+                    <h3 class="fw-bold">TITULO PRODUCTO</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore voluptatibus sunt eaque consequuntur, perferendis hic ab suscipit sit, inventore reprehenderit doloribus exercitationem totam officia veritatis omnis, ex error laudantium illum.</p>
+                    <h2 class="text-success">USD $39,99</h2>
+                    <img src="../../assets/img/visa.png" alt="visa logo" class="img-fluid w-25">
+                    <br><br>
+                    <i class="bi bi-truck fs-1 mt-5"></i>
+                    <h4>Entrega en 24 horas</h4>
+                    <br><br>
+                    <i class="bi bi-arrow-counterclockwise fs-1 mt-5"></i>
+                    <h4>Devolucion en 30 Dias</h4>
+                    <br><br>
+                    <h4>Cantidad:</h4>
+                    <input type="number"placeholder="1" class="form-control">
+                    <!--Tarea solo numeros positivos y enteros-->
+                    <hr>
+                    <br>
+                    <h4>SubTotal:</h4>
+                    <h2 class="mt-2 fw-bold">USD $ 1500</h2>
+                    <button class="btn btn-warning" type="button"> <i class="bi bi-cart-fill"></i> Añadir al carrito</button>
+                    <button class="btn btn-info" type="button"> Precio Dolares</button>
+
                 </div>
             </div>
-        </section>
-        <section>
-          <div class="container-fluid my-5">
-            <div class="row row-cols-1 row-cols-md-5 g-3" id="fila">
-              
-            </div>
-          </div>
-        </section>
+        </div>
+
     </main>
+
     <footer>
 
     </footer>
+
+    
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
-    <script src="./src/controllers/controladorHome.js" type="module"></script>    
+
 </body>
 </html>
