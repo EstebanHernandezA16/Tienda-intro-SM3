@@ -19,12 +19,12 @@ export function pintarProductos(productos) {
     
         //crear un titulo
         let nombre=document.createElement("h3")
-        nombre.classList.add("text-center")
+        nombre.classList.add("text-center","juan")
         nombre.textContent = producto.nombre
     
         //asignar el precio
         let precio=document.createElement("h5")
-        precio.classList.add("txt-center","text-success","fw-bold")
+        precio.classList.add("text-center","text-success","fw-bold","sara")
         precio.textContent= "USD "+producto.precio
     
         //detecando evento(watch dog o perro guardian)
