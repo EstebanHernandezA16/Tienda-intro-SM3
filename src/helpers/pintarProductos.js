@@ -18,13 +18,13 @@ export function pintarProductos(productos) {
         imagen.src=producto.fotos[0]
     
         //crear un titulo
-        let nombre=document.createElement("h3")
-        nombre.classList.add("text-center","juan")
-        nombre.textContent = producto.nombre
+        let titulo=document.createElement("h3")
+        titulo.classList.add("text-center")
+        titulo.textContent = producto.titulo
     
         //asignar el precio
         let precio=document.createElement("h5")
-        precio.classList.add("text-center","text-success","fw-bold","sara")
+        precio.classList.add("text-center","text-success","fw-bold")
         precio.textContent= "USD "+producto.precio
     
         //detecando evento(watch dog o perro guardian)
@@ -42,7 +42,7 @@ export function pintarProductos(productos) {
         //herencia del mas interno al mas externo
     
         tarjeta.appendChild(imagen)
-        tarjeta.appendChild(nombre)
+        tarjeta.appendChild(titulo)
         tarjeta.appendChild(precio)
         columna.appendChild(tarjeta)
         fila.appendChild(columna)

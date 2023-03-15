@@ -14,6 +14,7 @@ pintarProductos(productos)
 fila.addEventListener("click",function(evento){
     let datosProductoSeleccionado={}
     let tarjeta=evento.target.parentElement
+
     datosProductoSeleccionado.foto=tarjeta.querySelector("img").src
     datosProductoSeleccionado.nombre=tarjeta.querySelector("h3").textContent// o .juan
     datosProductoSeleccionado.precio=tarjeta.querySelector("h5").textContent// o .sara
